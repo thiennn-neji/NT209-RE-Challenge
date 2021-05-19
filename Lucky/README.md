@@ -136,7 +136,7 @@ Nhưng `AL` và `BL` trước khi thực hiện lệnh `ADC` chỉ có giá tr�
 
 ##### **Case 2: 0x06**
 `AL` sau khi thực hiện lệnh `ADC` có giá trị là `0x10` và `CF = 0` và `AF = 1`.
-Vì `BL = 8` như mình đã giải thích [ở đây](s) nên `AL = 8`
+Vì `BL = 8` như mình đã giải thích [ở đây](https://github.com/neji-uit/NT209-RE-Challenge/tree/main/Lucky#k%C3%AD-t%E1%BB%B1-s%E1%BB%91-th%E1%BB%A9-hai) nên `AL = 8`
 ### Answer
 Lucky number cần nhập là chuỗi `88`
 
