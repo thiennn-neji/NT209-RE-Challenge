@@ -4,7 +4,7 @@
 
 ### Architecture
 
-Dùng lệnh `file` để xác định kiến trúc của file thực thi `a.out`
+Dùng lệnh `file` để xác định kiến trúc của file thực thi `CrackMe2.exe`
 
 ```zsh
 └─$ file CrackMe2.exe
