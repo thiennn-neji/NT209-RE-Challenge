@@ -1,4 +1,4 @@
-# no strings attached
+# EscapeTheDunge0n - Expl0it
 ## Solution
 ### Architecture
 Dùng lệnh `file` để xác định kiến trúc của file thực thi `CrackMe.exe`
@@ -301,4 +301,6 @@ Nhập `1` `2` `1` `2` để vào được mode nhập `Secret key`
 
 `Secret key` là `788960`.
 ## Execute
+
+![EscapeTheDunge0n - Expl0it](https://user-images.githubusercontent.com/59532111/122337377-774cc380-cf68-11eb-8a9a-d8a282fa1632.png)
 
