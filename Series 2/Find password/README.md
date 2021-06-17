@@ -117,7 +117,7 @@ Stack[00001314]:006CFEEE db  42h ; B
 Stack[00001314]:006CFEEF db    0
 ```
 
-Đó là `buf1` và `buf2` mình nghĩ là 1 struct có dạng
+Đó là `Buf1` và `Buf2` mình nghĩ là 1 struct có dạng
 
 ```c
 struct buf
@@ -128,8 +128,7 @@ struct buf
 }
 ```
 
-Nhưng có thể hiểu đơn giản hơn là `Buf2` trỏ đến chuỗi `djejie`
-`Buf1` trỏ đến chuỗi `ggkfjgjfrg`
+Nhưng có thể hiểu đơn giản hơn là `Buf2` trỏ đến chuỗi `djejie` và `Buf1` trỏ đến chuỗi `ggkfjgjfrg`.
 
 #### Lời giải
 
