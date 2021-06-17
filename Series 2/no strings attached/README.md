@@ -89,7 +89,9 @@ _DWORD *__thiscall sub_BB3A60(_DWORD *this)
 }
 ```
 
-Vì kiểu dữ liệu đầu vào là `_DWORD` nên các phần tử này là `4-byte align`. Do đó sau khi thực hiện xong hàm, mảng `v5` chứa các kí tự cách nhau 4 bytes, là một chuỗi rời rạc. Nếu `align 1 byte` thì được chuỗi `encrypted-c-string`.
+Vì kiểu dữ liệu đầu vào là `_DWORD` nên các phần tử này là `4-byte align`. Do đó sau khi thực hiện xong hàm, mảng `v5` chứa các kí tự cách nhau 4 bytes, là một chuỗi rời rạc.
+Nếu `align 1 byte` thì được chuỗi `encrypted-c-string`.
+
 Đây có vẻ là chuỗi thú vị, và nó chính là `password` cần tìm.
 
 #### Kiểm tra chuỗi đầu vào
@@ -113,7 +115,9 @@ char __thiscall sub_BB63D0(char *this)
 ```
 
 Đầu tiên tại điều kiện `if ( sub_BB1645(this + 72, 0xCCCCCCCC) != 18 )` chính là đang kiểm tra độ dài `password` được nhập. Suy ra `password` dài 18 kí tự.
+
 Tiếp theo vòng lặp `for` sẽ kiểm tra từng kí tự của `password` (`*(char *)sub_BB164A(i)`) với từng kí tự trong mảng `v5` (lúc này con trỏ `this` là kiểu `char*` còn mảng `v5` được lưu theo kiểu `_DWORD` (4 bytes) nên phải nhân 4 , do đó `this[4 * i]`)
+
 Kết luận `password` cần tìm là `encrypted-c-string`
 
 ## Execute
