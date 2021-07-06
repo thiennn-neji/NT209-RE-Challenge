@@ -131,10 +131,10 @@ if ( v13 == 24 )
 else
   puts("Invalid flag, try again");
 ```
-Được 24 kí tự đầu của chuỗi `v8` là `flag{2020_sana_sa3ida:\)}@`
+Được 24 kí tự đầu của chuỗi `v8` là `flag{2020_sana_sa3ida:)}@`
 
 #### Kết luận
-Vậy `password` cần tìm có ít nhất 24 kí tự, 24 kí tự đầu là `flag{2020_sana_sa3ida:\)}@`
+Vậy `password` cần tìm có ít nhất 24 kí tự, 24 kí tự đầu là `flag{2020_sana_sa3ida:)}@`
 Tuy nhiên khi thực thi cần `escape` kí tự `)`
 ```zsh
 └─$ ./crackme flag{2020_sana_sa3ida:)}@
